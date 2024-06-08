@@ -50,19 +50,19 @@ enum custom_keycodes {
 // LEFT HAND HOME ROW MODS ├───────────────────────────────────┐
 
 #define CTL_A MT(MOD_LCTL, KC_A)
-#define ALT_R MT(MOD_LALT, KC_R)
-#define GUI_S MT(MOD_LGUI, KC_S)
-#define SHT_T MT(MOD_LSFT, KC_T)
-#define HYP_D MT(MOD_HYPR, KC_D)
-#define MEH_C MT(MOD_MEH, KC_C)
+#define ALT_S MT(MOD_LALT, KC_S)
+#define GUI_D MT(MOD_LGUI, KC_D)
+#define SHT_F MT(MOD_LSFT, KC_F)
+#define HYP_G MT(MOD_HYPR, KC_G)
+#define MEH_C MT(MOD_MEH, KC_G)
 
 // RIGHT HAND HOME ROW MODS ├───────────────────────────────────┐
 
-#define SHT_N MT(MOD_RSFT, KC_N)
-#define GUI_E MT(MOD_LGUI, KC_E)
-#define ALT_I MT(MOD_LALT, KC_I)
-#define CTL_O MT(MOD_LCTL, KC_O)
-#define HYP_H MT(MOD_HYPR, KC_H)
+#define SHT_J MT(MOD_RSFT, KC_J)
+#define GUI_K MT(MOD_LGUI, KC_K)
+#define ALT_K MT(MOD_LALT, KC_I)
+#define CTL_L MT(MOD_LCTL, KC_L)
+#define HYP_M MT(MOD_HYPR, KC_M)
 #define MEH_COM MT(MOD_MEH, KC_COMM)
 
 // LAYER TAP KEYS          ├───────────────────────────────────┐
@@ -88,46 +88,46 @@ enum custom_keycodes {
 
 // Left hand vertical combos
 // Between top and home row
-const uint16_t PROGMEM at_combo[] = {KC_W, ALT_R, COMBO_END};
-const uint16_t PROGMEM hash_combo[] = {KC_F, GUI_S, COMBO_END};
-const uint16_t PROGMEM dollar_combo[] = {KC_P, SHT_T, COMBO_END};
-const uint16_t PROGMEM perc_combo[] = {KC_B, KC_G, COMBO_END};
+const uint16_t PROGMEM at_combo[] = {KC_W, ALT_S, COMBO_END};
+const uint16_t PROGMEM hash_combo[] = {KC_E, GUI_D, COMBO_END};
+const uint16_t PROGMEM dollar_combo[] = {KC_R, SHT_F, COMBO_END};
+const uint16_t PROGMEM perc_combo[] = {KC_T, KC_G, COMBO_END};
 
 // Between home and bottom row
-const uint16_t PROGMEM grave_combo[] = {ALT_R, KC_X, COMBO_END};
-const uint16_t PROGMEM bsls_combo[] = {GUI_S, MEH_C, COMBO_END};
-const uint16_t PROGMEM eql_combo[] = {SHT_T, HYP_D, COMBO_END};
+const uint16_t PROGMEM grave_combo[] = {ALT_S, KC_X, COMBO_END};
+const uint16_t PROGMEM bsls_combo[] = {GUI_D, MEH_C, COMBO_END};
+const uint16_t PROGMEM eql_combo[] = {SHT_F, HYP_G, COMBO_END};
 const uint16_t PROGMEM tilde_combo[] = {KC_G, KC_V, COMBO_END};
 
 // horizontal combos
-const uint16_t PROGMEM esc_combo[] = {ALT_R, SHT_T, COMBO_END};
+const uint16_t PROGMEM esc_combo[] = {ALT_S, SHT_F, COMBO_END};
 const uint16_t PROGMEM copy_combo[] = {KC_X, MEH_C, COMBO_END};
-const uint16_t PROGMEM paste_combo[] = {MEH_C, HYP_D, COMBO_END};
-const uint16_t PROGMEM cut_combo[] = {KC_X, HYP_D, COMBO_END};
+const uint16_t PROGMEM paste_combo[] = {MEH_C, HYP_G, COMBO_END};
+const uint16_t PROGMEM cut_combo[] = {KC_X, HYP_G, COMBO_END};
 
 // Right hand vertical combos
 // Between top and home row
-const uint16_t PROGMEM caret_combo[] = {KC_J, KC_M, COMBO_END};
-const uint16_t PROGMEM plus_combo[] = {KC_L, SHT_N, COMBO_END};
-const uint16_t PROGMEM star_combo[] = {KC_U, GUI_E, COMBO_END};
-const uint16_t PROGMEM amp_combo[] = {KC_Y, ALT_I, COMBO_END};
+const uint16_t PROGMEM caret_combo[] = {KC_Y, KC_H, COMBO_END};
+const uint16_t PROGMEM plus_combo[] = {KC_U, SHT_J, COMBO_END};
+const uint16_t PROGMEM star_combo[] = {KC_I, GUI_K, COMBO_END};
+const uint16_t PROGMEM amp_combo[] = {KC_O, ALT_K, COMBO_END};
 
 // Between home and bottow row
 const uint16_t PROGMEM unds_combo[] = {KC_M, KC_K, COMBO_END};
-const uint16_t PROGMEM mins_combo[] = {SHT_N, HYP_H, COMBO_END};
-const uint16_t PROGMEM slsh_combo[] = {GUI_E, MEH_COM, COMBO_END};
-const uint16_t PROGMEM pipe_combo[] = {ALT_I, KC_DOT, COMBO_END};
+const uint16_t PROGMEM mins_combo[] = {SHT_N, HYP_M, COMBO_END};
+const uint16_t PROGMEM slsh_combo[] = {GUI_K, MEH_COM, COMBO_END};
+const uint16_t PROGMEM pipe_combo[] = {ALT_K, KC_DOT, COMBO_END};
 
 // Horizontal combos: brackets
 const uint16_t PROGMEM lsqr_combo[] = {KC_L, KC_U, COMBO_END};
 const uint16_t PROGMEM rsqr_combo[] = {KC_U, KC_Y, COMBO_END};
-const uint16_t PROGMEM lpar_combo[] = {SHT_N, GUI_E, COMBO_END};
-const uint16_t PROGMEM rpar_combo[] = {GUI_E, ALT_I, COMBO_END};
-const uint16_t PROGMEM lcbr_combo[] = {HYP_H, MEH_COM, COMBO_END};
+const uint16_t PROGMEM lpar_combo[] = {SHT_N, GUI_K, COMBO_END};
+const uint16_t PROGMEM rpar_combo[] = {GUI_K, ALT_K, COMBO_END};
+const uint16_t PROGMEM lcbr_combo[] = {HYP_M, MEH_COM, COMBO_END};
 const uint16_t PROGMEM rcbr_combo[] = {MEH_COM, KC_DOT, COMBO_END};
 
 const uint16_t PROGMEM lt_combo[] = {KC_M, SHT_N, COMBO_END};
-const uint16_t PROGMEM gt_combo[] = {ALT_I, CTL_O, COMBO_END};
+const uint16_t PROGMEM gt_combo[] = {ALT_K, CTL_L, COMBO_END};
 
 combo_t key_combos[COMBO_COUNT] = {
   COMBO(at_combo, KC_AT),
@@ -227,21 +227,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    │ b a s e                                         │      ╭╮╭╮╭╮╭╮
    └─────────────────────────────────────────────────┘      │╰╯╰╯╰╯│
              ┌─────────┬─────────┬─────────┬─────────┬──────╨──┐┌──╨──────┬─────────┬─────────┬─────────┬─────────┐
-       ┄┈┈───═╡    Q    │    W    │    F    │    P    │    B    ││    J    │    L    │    U    │    Y    │    '    │   
+     ╌┄┈┈───═╡    Q    │    W    │    E    │    R    │    T    ││    Y    │    U    │    I    │    O    │    P    │    
              ├─────────┼─────────┼─────────┼─────────┼─────────┤├─────────┼─────────┼─────────┼─────────┼─────────┤
-             │    A    │    R    │    S    │    T    │    G    ││    M    │    N    │    E    │    I    │    O    │    
+             │    A    │    S    │    D    │    F    │    G    ││    H    │    J    │    K    │    L    │    ;    │
    ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
-   │   TAB   │    Z    │    X    │    C    │    D    │    V    ││    K    │    H    │    ,;   │    .:   │   ?!    │    TAB  │
+   │   TAB   │    Z    │    X    │    C    │    V    │    B    ││    N    │    M    │   ,;    │   .:    │    /    │   TAB   │
    └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┤├─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
                                  │  UTIL   │  NAV    │  SHIFT  ││   ENT   │    NUM  │   FUN   │  
                                  └─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┘*/ 
 
    [_BASE] = LAYOUT(
  //╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷
-              KC_Q,     KC_W,     KC_F,     KC_P,     KC_B,      KC_J,     KC_L,     KC_U,     KC_Y,     KC_QUOT,  
-              CTL_A,    ALT_R,    GUI_S,    SHT_T,    KC_G,      KC_M,     SHT_N,    GUI_E,    ALT_I,    CTL_O,    
-    KC_TAB,   KC_Z,     KC_X,     MEH_C,    HYP_D,    KC_V,      KC_K,     HYP_H,    MEH_COM,  KC_DOT,   KC_QUES,  KC_TAB,
-                                  UTIL,     NAV,      OS_SHT,    KC_ENT,      NUM,      FUN
+              KC_Q,     KC_W,     KC_E,     KC_R,     KC_T,      KC_Y,     KC_U,     KC_I,     KC_O,     KC_P,  
+              GUI_A,    ALT_S,    CTL_D,    SHT_F,    KC_G,      KC_H,     SHT_J,    CTL_K,    ALT_L,    GUI_D,    
+    KC_Q,     KC_Z,     KC_X,     KC_C,     KC_V,     KC_B,      KC_N,     KC_M,     KC_COMM,  KC_DOT,   KC_SLSH,  KC_P,
+                                  KC_DEL,   LOWER,    KC_SPC,    KC_ENT,   RAISE,    KC_BSPC
  ),
  /*
    ╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸
@@ -250,7 +250,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    │ n a v                                           │      ╭╮╭╮╭╮╭╮
    └─────────────────────────────────────────────────┘      │╰╯╰╯╰╯│
              ┌─────────┬─────────┬─────────┬─────────┬──────╨──┐┌──╨──────┬─────────┬─────────┬─────────┬─────────┐
-     ╌┄┈┈───═╡          │         │         │         │         ││         │  HOME   │   UP    │   END   │  PGUP   │   
+     ╌┄┈┈───═╡         │         │         │         │         ││         │  HOME   │   UP    │   END   │  PGUP   │   
              ├─────────┼─────────┼─────────┼─────────┼─────────┤├─────────┼─────────┼─────────┼─────────┼─────────┤
              │  CTRL   │  ALT    │  CMD    │   SHFT  │         ││         │  LEFT   │  DOWN   │  RIGHT  │  PGDN   │    
    ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
@@ -273,7 +273,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    │ n u m                                           │      ╭╮╭╮╭╮╭╮
    └─────────────────────────────────────────────────┘      │╰╯╰╯╰╯│
              ┌─────────┬─────────┬─────────┬─────────┬──────╨──┐┌──╨──────┬─────────┬─────────┬─────────┬─────────┐
-     ╌┄┈┈── ─═╡    +    │    7    │    8    │    9    │    *    ││         │         │         │         │         │   
+     ╌┄┈┈───═╡    +    │    7    │    8    │    9    │    *    ││         │         │         │         │         │   
              ├─────────┼─────────┼─────────┼─────────┼─────────┤├─────────┼─────────┼─────────┼─────────┼─────────┤
              │    0    │    4    │    5    │    6    │    =    ││         │   SHFT  │   CMD   │   ALT   │   CTRL  │
    ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
@@ -296,7 +296,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    │ f u n c t i o n                                 │      ╭╮╭╮╭╮╭╮
    └─────────────────────────────────────────────────┘      │╰╯╰╯╰╯│
              ┌─────────┬─────────┬─────────┬─────────┬──────╨──┐┌──╨──────┬─────────┬─────────┬─────────┬─────────┐
-     ╌┄┈ ┈───═╡   F12   │   F7    │   F8    │   F9    │         ││         │         │         │         │         │   
+     ╌┄┈┈───═╡   F12   │   F7    │   F8    │   F9    │         ││         │         │         │         │         │   
              ├─────────┼─────────┼─────────┼─────────┼─────────┤├─────────┼─────────┼─────────┼─────────┼─────────┤
              │   F11   │   F4    │   F5    │   F6    │         ││         │  SHFT   │   CMD   │   ALT   │  CTRL   │    
    ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
@@ -319,7 +319,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    │ u t i l i t y                                   │      ╭╮╭╮╭╮╭╮
    └─────────────────────────────────────────────────┘      │╰╯╰╯╰╯│
              ┌─────────┬─────────┬─────────┬─────────┬──────╨──┐┌──╨──────┬─────────┬─────────┬─────────┬─────────┐
-     ╌┄┈ ┈───═╡   BOOT  │         │         │         │         ││         │         │  VOL+   │         │         │   
+     ╌┄┈┈───═╡   BOOT  │         │         │         │         ││         │         │  VOL+   │         │         │   
              ├─────────┼─────────┼─────────┼─────────┼─────────┤├─────────┼─────────┼─────────┼─────────┼─────────┤
              │         │         │         │         │         ││         │         │  VOL-   │         │         │    
    ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
