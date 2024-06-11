@@ -60,8 +60,8 @@ enum custom_keycodes {
 
 #define SHT_J MT(MOD_RSFT, KC_J)
 #define GUI_K MT(MOD_LGUI, KC_K)
-#define ALT_K MT(MOD_LALT, KC_I)
-#define CTL_L MT(MOD_LCTL, KC_L)
+#define ALT_L MT(MOD_LALT, KC_L)
+#define CTL_S MT(MOD_LCTL, KC_S)
 #define HYP_M MT(MOD_HYPR, KC_M)
 #define MEH_COM MT(MOD_MEH, KC_COMM)
 
@@ -110,24 +110,24 @@ const uint16_t PROGMEM cut_combo[] = {KC_X, HYP_G, COMBO_END};
 const uint16_t PROGMEM caret_combo[] = {KC_Y, KC_H, COMBO_END};
 const uint16_t PROGMEM plus_combo[] = {KC_U, SHT_J, COMBO_END};
 const uint16_t PROGMEM star_combo[] = {KC_I, GUI_K, COMBO_END};
-const uint16_t PROGMEM amp_combo[] = {KC_O, ALT_K, COMBO_END};
+const uint16_t PROGMEM amp_combo[] = {KC_O, ALT_L, COMBO_END};
 
 // Between home and bottow row
 const uint16_t PROGMEM unds_combo[] = {KC_M, KC_K, COMBO_END};
-const uint16_t PROGMEM mins_combo[] = {SHT_N, HYP_M, COMBO_END};
+const uint16_t PROGMEM mins_combo[] = {SHT_J, HYP_M, COMBO_END};
 const uint16_t PROGMEM slsh_combo[] = {GUI_K, MEH_COM, COMBO_END};
-const uint16_t PROGMEM pipe_combo[] = {ALT_K, KC_DOT, COMBO_END};
+const uint16_t PROGMEM pipe_combo[] = {ALT_L, KC_DOT, COMBO_END};
 
 // Horizontal combos: brackets
-const uint16_t PROGMEM lsqr_combo[] = {KC_L, KC_U, COMBO_END};
-const uint16_t PROGMEM rsqr_combo[] = {KC_U, KC_Y, COMBO_END};
-const uint16_t PROGMEM lpar_combo[] = {SHT_N, GUI_K, COMBO_END};
-const uint16_t PROGMEM rpar_combo[] = {GUI_K, ALT_K, COMBO_END};
+const uint16_t PROGMEM lsqr_combo[] = {KC_Y, KC_U, COMBO_END};
+const uint16_t PROGMEM rsqr_combo[] = {KC_U, KC_I, COMBO_END};
+const uint16_t PROGMEM lpar_combo[] = {SHT_J, GUI_K, COMBO_END};
+const uint16_t PROGMEM rpar_combo[] = {GUI_K, ALT_L, COMBO_END};
 const uint16_t PROGMEM lcbr_combo[] = {HYP_M, MEH_COM, COMBO_END};
 const uint16_t PROGMEM rcbr_combo[] = {MEH_COM, KC_DOT, COMBO_END};
 
-const uint16_t PROGMEM lt_combo[] = {KC_M, SHT_N, COMBO_END};
-const uint16_t PROGMEM gt_combo[] = {ALT_K, CTL_L, COMBO_END};
+const uint16_t PROGMEM lt_combo[] = {KC_M, SHT_J, COMBO_END};
+const uint16_t PROGMEM gt_combo[] = {ALT_L, CTL_S, COMBO_END};
 
 combo_t key_combos[COMBO_COUNT] = {
   COMBO(at_combo, KC_AT),
@@ -239,13 +239,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    [_BASE] = LAYOUT(
  //╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷
               KC_Q,     KC_W,     KC_E,     KC_R,     KC_T,      KC_Y,     KC_U,     KC_I,     KC_O,     KC_P,  
-              GUI_A,    ALT_S,    CTL_D,    SHT_F,    KC_G,      KC_H,     SHT_J,    CTL_K,    ALT_L,    GUI_D,    
+              CTL_A,    ALT_S,    GUI_D,    SHT_F,    KC_G,      KC_H,     SHT_J,    KC_K,    ALT_L,    GUI_D,    
     KC_Q,     KC_Z,     KC_X,     KC_C,     KC_V,     KC_B,      KC_N,     KC_M,     KC_COMM,  KC_DOT,   KC_SLSH,  KC_P,
-                                  KC_DEL,   LOWER,    KC_SPC,    KC_ENT,   RAISE,    KC_BSPC
+                                  UTIL,     NAV,      OS_SHT,    KC_ENT,   NUM,      FUN
  ),
  /*
    ╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸
-   
+
    ┌─────────────────────────────────────────────────┐
    │ n a v                                           │      ╭╮╭╮╭╮╭╮
    └─────────────────────────────────────────────────┘      │╰╯╰╯╰╯│
@@ -268,7 +268,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  ),
  /*
    ╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸
-   
+
    ┌─────────────────────────────────────────────────┐
    │ n u m                                           │      ╭╮╭╮╭╮╭╮
    └─────────────────────────────────────────────────┘      │╰╯╰╯╰╯│
